@@ -1,0 +1,48 @@
+# Showtime – Movie Ticket Booking Web Application
+
+**Showtime** is a sleek, modern web platform designed for discovering movies and booking cinema tickets seamlessly. Users can explore trending releases, filter listings by language and release status, and manage their bookings.
+
+---
+
+## 🚀 Key Features
+
+* **Navigation & Location Selection:**
+  * Global movie title search.
+  * City-based filtering (e.g., Lucknow, Varanasi, Delhi NCR, Mumbai, Bengaluru).
+  * Quick navigation to user accounts and booking history.
+
+* **Featured Banner Carousel:**
+  * Highlights blockbuster releases and IMAX features (e.g., *Orbit Zero*) with direct call-to-action buttons for ticket booking.
+
+* **Dynamic Movie Catalog:**
+  * **Status Toggles:** Switch between **Now Showing** and **Coming Soon** releases.
+  * **Language Filters:** Refine movies by language (Hindi, English, Tamil, Telugu, All).
+  * **Detailed Movie Cards:** View IMDb/user ratings, genres, and language information at a glance.
+
+---
+
+## 🎬 Featured Movies Showcase
+
+| Movie | Rating | Genre | Language |
+| :--- | :--- | :--- | :--- |
+| **Orbit Zero** | ★ 8.9 / 10 | Sci-Fi, Adventure | English |
+| **Midnight Express** | ★ 8.6 / 10 | Thriller, Action | Hindi |
+| **Paper Planes** | ★ 8.4 / 10 | Animation, Family | English |
+| **Kaveri** | ★ 8.2 / 10 | Drama, Romance | Tamil |
+| **Sarhad** | ★ 8.1 / 10 | Drama, War | Hindi |
+| **Chai & Chaos** | ★ 7.9 / 10 | Comedy, Drama | Hindi |
+| **Dhoom Machine** | ★ 7.7 / 10 | Action, Comedy | Telugu |
+| **The Last Lighthouse** | ★ 7.4 / 10 | Horror, Mystery | English |
+
+---
+
+## 🛠️ Tech Stack & Setup
+
+### Built With
+* **Frontend:** HTML5, CSS3 / Modern Styling Framework, JavaScript
+
+### Local Development Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/showtime-movie-booking.git](https://github.com/your-username/showtime-movie-booking.git)

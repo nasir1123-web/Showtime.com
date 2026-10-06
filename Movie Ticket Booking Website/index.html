@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Showtime – Book movie tickets</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap top">
+      <button class="logo" id="home" aria-label="Showtime home">show<b>time</b></button>
+      <input class="search" id="q" type="search" placeholder="Search for movies" aria-label="Search for movies">
+      <select class="city" id="city" aria-label="City">
+        <option>Varanasi</option>
+        <option>Delhi NCR</option>
+        <option>Mumbai</option>
+        <option>Bengaluru</option>
+        <option>Lucknow</option>
+      </select>
+      <button class="btn ghost" id="mine">My bookings <span id="cnt"></span></button><button class="btn"
+        id="signin">Sign in</button><button class="btn ghost" id="signout" hidden>Sign out</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="view" id="v-home">
+      <div class="hero" id="hero"></div>
+      <div class="bar">
+        <div class="chips" id="maintabs"></div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="view" id="v-detail" hidden>
+      <button class="back" data-back="home">← All movies</button>
+      <div id="detail"></div>
+    </section>
+
+    <section class="view" id="v-seats" hidden>
+      <button class="back" data-back="detail">← Change show</button>
+      <h2 id="seat-title"></h2>
+      <p id="seat-sub" style="color:var(--muted);margin:2px 0 6px"></p>
+      <p style="margin:0 0 18px">Seats held for <b id="timer">5:00</b></p>
+      <div class="panel">
+        <div class="seatwrap">
+          <div class="seatmap" id="seatmap"></div>
+        </div>
+        <div class="legend"><span>Available</span><span class="s">Selected</span><span class="b">Sold</span></div>
+      </div>
+      <div class="panel" id="snacks"></div>
+      <div class="panel promo"><input id="promo" placeholder="Promo code (try SHOW10 or FIRST50)"
+          aria-label="Promo code"><button class="btn" id="apply">Apply</button><span id="pmsg"></span></div>
+      <div class="checkout">
+        <div class="wrap">
+          <div><b id="sum-main">Select up to 8 seats</b><small id="sum-sub"></small></div>
+          <button class="btn" id="pay" disabled>Pay</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="v-auth" hidden>
+      <button class="back" data-back="home">← Back to movies</button>
+      <div class="auth panel">
+        <div class="tabs" id="tabs"></div>
+        <form id="authform" novalidate></form>
+        <p class="note">Accounts are stored only in this browser for the demo.</p>
+      </div>
+    </section>
+
+    <section class="view" id="v-pay" hidden>
+      <button class="back" data-back="seats">← Back to seats</button>
+      <h2 style="margin-bottom:6px">Payment</h2>
+      <div class="paygrid">
+        <div class="panel">
+          <div class="tabs" id="ptabs"></div>
+          <form id="payform" novalidate></form>
+        </div>
+        <div class="panel" id="order"></div>
+      </div>
+    </section>
+
+    <section class="view" id="v-mine" hidden>
+      <button class="back" data-back="home">← All movies</button>
+      <h2>My bookings</h2>
+      <div id="minelist"></div>
+    </section>
+
+    <section class="view" id="v-done" hidden>
+      <div class="center">
+        <h2>Booking confirmed</h2>
+        <p style="color:var(--muted)">Show this ticket at the cinema entrance.</p>
+      </div>
+      <div class="ticket" id="ticket"></div>
+      <div class="center"><button class="btn" id="again">Book another movie</button></div>
+    </section>
+  </main>
+  <div id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
